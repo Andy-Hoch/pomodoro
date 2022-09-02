@@ -1,0 +1,35 @@
+<html>
+ <head>
+     <title>Test</title>
+     <script src="app.js" defer></script>
+     <link rel="stylesheet" href="style.css" >
+ </head>
+ <body>
+    <div class="progress-container">
+        <button>restart progress animation</button>
+        <div class="progress-elem" style="max-width: 100%;">
+            <svg style="transform: rotate(90deg)" height="100%" viewBox="0 0 110 110" width="100%" style="overflow: visible;">
+                <!-- gray dashed -->
+                <circle cx="50%" cy="50%" fill="none" stroke-width="20" r="40" stroke="#D4D4D8" stroke-dasharray="0.6,0.6"></circle>
+                <!-- green solid -->
+                <circle class="progress-bar" cx="50%" cy="50%" fill="none" stroke-width="20" r="40" stroke="#19C558" style="stroke-dashoffset: 251.3274; stroke-dasharray: 251.3274;"></circle>
+                <!-- inner black stroke -->
+                <circle cx="50%" cy="50%" fill="none" stroke-width="1.5" r="27.5" stroke="#777"></circle>
+                <!-- outer black stroke -->
+                <circle cx="50%" cy="50%" fill="none" stroke-width="1.5" r="52.5" stroke="#777"></circle>
+                <g class="success" style="display:none;">
+                <!-- inner solid green success -->
+                <circle cx="50%" cy="50%" fill="#19C558" r="50"></circle>
+                <!-- checkmark line -->
+                <polyline points="52 74, 65 60, 40 36" stroke="#fff" fill="none" stroke-width="10" />
+                </g>
+            </svg>
+            <div class="progress-text-container">
+                <div class="progress-text">
+                    <span class="progress-text-inner">0</span><span class="progress-text-percent">%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+ </body>
+ </html>
